@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.password">asdf</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/student_database</property>
+  <property name="hibernate.connection.username">Anup</property>
+  <mapping class="com.student.project.Student"/>
+  <mapping class="com.student.project.Classroom"/>
+  <mapping class="com.student.project.Courses"/>
+  <mapping class="com.student.project.Grades"/>
+  <mapping class="com.student.project.Library"/>
+ </session-factory>
+</hibernate-configuration>
